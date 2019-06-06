@@ -24,7 +24,7 @@ echo <<<GO
        <div class="card" style="height:450px">
              <img src=$row[7] alt="Vacation Packages" style="width:100%">
                 <div class="text"> 
-                  <h4>$row[1]</h4>
+                  <h5>$row[1]</h5>
                     <p class="date">$row[2] <br>  
                       $row[3]</p>
                     <p class="price">ONLY $$row[5]</p>
