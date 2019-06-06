@@ -21,7 +21,7 @@
       
 echo <<<GO
      
-       <div class="card" style="height:460px">
+       <div class="card" style="height:430px">
              <img src=$row[7] alt="Vacation Packages" style="width:100%">
                 <div class="text"> 
                   <h5>$row[1]</h5>
