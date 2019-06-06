@@ -24,48 +24,16 @@ if (session_status() == PHP_SESSION_NONE) {
         echo <<< logout
         <form id="logout" action="logout.php" method="post">
         </form>
-        <h5>Hello $user </h5>
+        <h4>Hello $user </h4>
 logout;
       }
       else {
         echo <<< login
-		
-<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
-  login
-</button>
- 
-
-<div class="modal fade" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
- 
-   
-      <div class="modal-header">
-        <h5 class="modal-title">log in to your account</h5>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
- 
-      <div class="modal-body">
         <form action="login.php" method="post" id="formsize" >
-		  <label style="width:100px">Use name</label>
-          <input type="text" name="username" placeholder="Username" aria-describedby="inputGroup-sizing-sm" value="" >
-		  <br>
-		  <label style="width:100px">Password</label>
-          <input type="password" name="password" placeholder="Password" aria-describedby="inputGroup-sizing-sm" value="">
-		  <br><br>
-          <button style="width:400px" type="submit" name="login-submit">Login</button>
+          <input type="text" name="username" placeholder="Username" aria-describedby="inputGroup-sizing-sm" value="" style="width:100px">
+          <input type="password" name="password" placeholder="Password" aria-describedby="inputGroup-sizing-sm" value="" style="width:100px">
+          <button type="submit" name="login-submit">Login</button>
         </form>
-      </div>
- 
-   
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
-      </div>
- 
-    </div>
-  </div>
-</div>
-        
         
 login;
       }
@@ -73,7 +41,7 @@ login;
     ?>
 	
     <?php
-    if (isset($_SESSION['username'])) {
+    if (isset($_SESSION['username'])) {     
     echo <<< logoutbutton
      <span id="logoutbtn" style="margin-left:70px;color:black" mouseover="console.log('dsfs');" onclick='document.forms["logout"].submit()'; style="color:#007bff;">Logout</span>
 logoutbutton;
