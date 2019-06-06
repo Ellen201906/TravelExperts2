@@ -30,8 +30,8 @@ logout;
       else {
         echo <<< login
         <form action="login.php" method="post" id="formsize" >
-          <input type="text" name="username" placeholder="Username" aria-describedby="inputGroup-sizing-sm" value="" style="width:100px">
-          <input type="password" name="password" placeholder="Password" aria-describedby="inputGroup-sizing-sm" value="" style="width:100px">
+          <input type="text" name="username" placeholder="username" aria-describedby="inputGroup-sizing-sm" value="" style="width:100px; "><br>
+          <input type="password" name="password" placeholder="password" aria-describedby="inputGroup-sizing-sm" value="" style="width:100px"><br>
           <button type="submit" name="login-submit">Login</button>
         </form>
         
@@ -41,7 +41,7 @@ login;
     ?>
 	
     <?php
-    if (isset($_SESSION['username'])) {     
+    if (isset($_SESSION['username'])) {
     echo <<< logoutbutton
      <span id="logoutbtn" style="margin-left:70px;color:black" mouseover="console.log('dsfs');" onclick='document.forms["logout"].submit()'; style="color:#007bff;">Logout</span>
 logoutbutton;
