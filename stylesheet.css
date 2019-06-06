@@ -1,0 +1,40 @@
+body {
+    background-image: url("maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    background-color: #e3f2fd;
+}
+
+#logo{
+    width:50PX;
+    height:55PX;
+    float:left;
+    margin-top:-20px;
+}
+
+#nav1{
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+a {
+    color: black
+}
+
+#footer{
+    font-size:14px;
+    color:black;
+    margin-top:50px;
+    margin-left:20px;
+}
+
+#logoutbtn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
