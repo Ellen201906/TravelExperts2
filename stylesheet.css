@@ -16,13 +16,11 @@ body {
     margin-top:-20px;
 }
 
-#formsize{
-    float:left;
-}
+
 
 #nav1 {
     position: absolute;
-    top: 50px;
+    top: 40px;
     right: 10px;
 }
 
