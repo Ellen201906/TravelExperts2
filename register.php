@@ -101,7 +101,7 @@
         <div id="maindiv">
             <h4 id="tbheading style="color:black">Please register your information:</h4>
             <p><span style="color:#FF0000;">* All information are required.</span></p>
-            <table id="tb" style="border:solid  1px">
+            <table id="tb">
                 <tr>
                 <form method="POST" id="fm1" action="regprocess.php" autocomplete="off" >
                     <td class="lab"><label>User Name:</label></td>
