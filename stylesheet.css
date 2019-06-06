@@ -5,7 +5,7 @@ body {
 }
 
 .navbar {
-    margin-top: 25px;
+    margin-top: 50px;
     background-color: #e3f2fd;
 }
 
@@ -16,10 +16,14 @@ body {
     margin-top:-20px;
 }
 
-#nav1{
-    position:absolute;
-    top:10px;
-    right:10px;
+#formsize{
+    float:left;
+}
+
+#nav1 {
+    position: absolute;
+    top: 50px;
+    right: 10px;
 }
 
 a {
