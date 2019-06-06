@@ -30,8 +30,8 @@ logout;
       else {
         echo <<< login
         <form action="login.php" method="post" id="formsize" >
-          <input type="text" name="username" placeholder="username" aria-describedby="inputGroup-sizing-sm" value="" style="width:100px; "><br>
-          <input type="password" name="password" placeholder="password" aria-describedby="inputGroup-sizing-sm" value="" style="width:100px"><br>
+          <input type="text" name="username" placeholder="username" aria-describedby="inputGroup-sizing-sm" value="" style="width:100px; ">
+          <input type="password" name="password" placeholder="password" aria-describedby="inputGroup-sizing-sm" value="" style="width:100px">
           <button type="submit" name="login-submit">Login</button>
         </form>
         
