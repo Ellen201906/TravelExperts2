@@ -5,14 +5,6 @@ if (session_status() == PHP_SESSION_NONE) {
 }
 
 ?>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
- <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
-  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -21,9 +13,9 @@ if (session_status() == PHP_SESSION_NONE) {
 <div id="header">
   <a href="index.php"><img src="logosmall.gif" id="logo" alt="My Image" title="Our logo" /></a>
    
-	<a href="index.php" style="color:black">Home |</a>
-    <a href="register.php" style="color:black">Register |</a> 
-    <a href="contact.php" style="color:black">Contact |</a>
+	<a   href="index.php">Home |</a>
+    <a href="register.php">Register |</a> 
+    <a href="contact.php">Contact |</a>
 	
   <nav id="nav1">
     <?php
@@ -32,20 +24,7 @@ if (session_status() == PHP_SESSION_NONE) {
         echo <<< logout
         <form id="logout" action="logout.php" method="post">
         </form>
-        <h5 style="margin-right:50px">Hello $user </h5>
-
-		<div class="container" >
-     <div class="dropdown">
-     <button type="button" class="btn btn-link " data-toggle="dropdown" style="float:right; margin-top:-40px;margin-right:-15px">
-      <i class='fas fa-portrait' style='font-size:36px;color:gray;'></i>
-     </button>
-    <div class="dropdown-menu dropdown-menu-right">
-      <a class="dropdown-item" href="#"><span id="logoutbtn" style="color:black" mouseover="console.log('dsfs');" onclick='document.forms["logout"].submit()'; style="color:#007bff;">Logout</span></a>
-      <a class="dropdown-item" href="#">history record</a>
-    </div>
-  </div>
-</div>
-
+        <h5>Hello $user </h5>
 logout;
       }
       else {
@@ -76,7 +55,9 @@ logout;
 		  <br><br>
           <button style="width:400px" type="submit" name="login-submit">Login</button>
         </form>
-      </div>   
+      </div>
+ 
+   
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
       </div>
@@ -84,24 +65,25 @@ logout;
     </div>
   </div>
 </div>
-       
+        
+        
 login;
       }
 
     ?>
 	
     <?php
-    //if (isset($_SESSION['username'])) {
-    //echo <<< logoutbutton
-    // <span id="logoutbtn" style="margin-left:70px;color:black" mouseover="console.log('dsfs');" onclick='document.forms["logout"].submit()'; style="color:#007bff;">Logout</span>
-//logoutbutton;
-    //}
+    if (isset($_SESSION['username'])) {
+    echo <<< logoutbutton
+     <span id="logoutbtn" style="margin-left:70px;color:black" mouseover="console.log('dsfs');" onclick='document.forms["logout"].submit()'; style="color:#007bff;">Logout</span>
+logoutbutton;
+    }
     ?>
 
   </nav>
   <br>
   <br>
-  <nav class="navbar navbar-expand-lg navbar-light bg-info" style="margin-top:-10px">
+  <nav class="navbar navbar-expand-lg navbar-light bg-info">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
