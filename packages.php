@@ -29,14 +29,14 @@ echo <<<GO
                     <p class="date">$row[2] <br>  
                       $row[3]</p>
                     <p class="price">ONLY $$row[5]</p>
-                    <p>$row[4]<p>
+                    <p>$row[4]<p
 GO;
 	 // Create a variable //
-		$hits = file("counter".$row[0].".txt");
+		$hits = file("counter1.txt");
                //Add one to the file //
                $hits[0] ++;
                //Open the file and write on file//
-               $fp = fopen("counter".$row[0].".txt", "w");
+               $fp = fopen("counter1.txt", "w");
               // Fput writes the first part in the brackets//
                fputs($fp , "$hits[0]");
                //Close file// 
