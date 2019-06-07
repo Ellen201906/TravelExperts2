@@ -70,7 +70,7 @@
                 echo $hits[0]." Clicks";
                 ?>
             </div>
-                <br><br>
+                <br>
                 <form method="get" action="booking1.php">
           <button type="submit" name="2" class="button btn btn-info  btn-link">Book</button>
            </form>

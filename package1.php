@@ -78,7 +78,7 @@
                echo  $hits[0].'clicks';
                 ?>
 				</div>
-				<br><br>
+				<br>
 				
 
           <form method="get" action="booking1.php">
