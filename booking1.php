@@ -317,7 +317,7 @@ $i++;
 <p  style="margin-left:50px"><img src="phone.jpg" style="width:30px">Help telephone 1-403-686-8429      <a href="contact.php">contact us</a>
 			</p>
 </div>
-
+<br>
 <div class="row">
   <div class="col-75">
     <div class="container">
