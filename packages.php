@@ -12,37 +12,53 @@
     if ($result=mysqli_query($dbh,$sql))
       {
         
-               
-      
+   
       // Fetch one and one row, at time 
        while ($row=mysqli_fetch_row($result))
       
           // The value of this is row one column number
-	  
+			print	'<div class="counter">';'
+          
+              // Create a variable //
+                $hits = file("counter2.txt");
+                 //Add one to the file //
+                $hits[0] ++;
+                  //Open the file and write on file//
+                $fp = fopen("counter2.txt", "w");
+                // Fput writes the first part in the brackets//
+                fputs($fp , "$hits[0]");
+                //Close file// 
+                fclose($fp);
+                echo $hits[0]." Clicks";
+              
+            print '</div>';
       
 echo <<<GO
      
-      	       
-       <div class="card" style="height:430px">
+       <div class="card" style="height:450px">
              <img src=$row[7] alt="Vacation Packages" style="width:100%">
                 <div class="text"> 
-                  <h5>$row[1]</h5>
+                  <h4>$row[1]</h4>
                     <p class="date">$row[2] <br>  
                       $row[3]</p>
                     <p class="price">ONLY $$row[5]</p>
-                    <p>$row[4]<p
-	    
+                    <p>$row[4]</p>
+                </div>
+
+			
+
+
+
                 <form method='post' action='package$row[0].php'>
                   <input class="book btn-outline-success" type='submit' value='Details' name=$row[0]></input>
                 </form>
-		</div>
-		
-		
-           
-        
+        </div>
 GO;
-	   
-   }                  
-?>          
+      }
+     
+             
+?>
+    
+          
           
 
