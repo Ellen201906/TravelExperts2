@@ -24,24 +24,6 @@ echo <<<GO
       	       
        <div class="card" style="height:430px">
              <img src=$row[7] alt="Vacation Packages" style="width:100%">
-	     <div class="counter">
-            <i class="fa fa-eye"></i>
-            <!-- this part is recording the amount the times package one uploads and writes the a record in to a file saved in the database -->
-            <?php
-            // Create a variable //
-               $hits = file("counter1.txt");
-               //Add one to the file //
-               $hits[0] ++;
-               //Open the file and write on file//
-               $fp = fopen("counter1.txt", "w");
-              // Fput writes the first part in the brackets//
-               fputs($fp , "$hits[0]");
-               //Close file// 
-               fclose($fp);
-               echo  $hits[0].'clicks';
-                ?>
-            </div>
-	     
                 <div class="text"> 
                   <h5>$row[1]</h5>
                     <p class="date">$row[2] <br>  
