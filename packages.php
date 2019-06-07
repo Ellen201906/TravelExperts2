@@ -18,6 +18,7 @@
        while ($row=mysqli_fetch_row($result))
       
           // The value of this is row one column number
+	  
       
 echo <<<GO
      
@@ -35,7 +36,7 @@ echo <<<GO
                   <input class="book btn-outline-success" type='submit' value='Details' name=$row[0]></input>
                 </form>
 		</div>
-		</div>
+		
 		
            
         
