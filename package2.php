@@ -31,23 +31,7 @@
       <div class="destination-info-box">
         <div class="info">
         <h2>Polynesian Paradise</h2>
-		 <div class="counter">
-            <i class="fa fa-eye"></i>
-            <!-- this part is recording the amount of time the package  uploads and writes the a record in to a file saved in the database -->
-            <?php
-              // Create a variable //
-                $hits = file("counter2.txt");
-                 //Add one to the file //
-                $hits[0] ++;
-                  //Open the file and write on file//
-                $fp = fopen("counter2.txt", "w");
-                // Fput writes the first part in the brackets//
-                fputs($fp , "$hits[0]");
-                //Close file// 
-                fclose($fp);
-                echo $hits[0]." Clicks";
-                ?>
-            </div>
+		
         <!-- this part is for the rating stars. i created class to costumes the stars, like coloring the stars  -->
             <p class="detail"><strong>All Inclusive</strong>
                 <span class="fa fa-star checked"></span>
@@ -69,7 +53,23 @@
                 <br>
                 <i class='fas fa-plane-departure'></i><span>Tahiti, Fa'a'ā International Airport</span>
                 <br>
-                <br>
+                 <div class="counter">
+            <i class="fa fa-eye"></i>
+            <!-- this part is recording the amount of time the package  uploads and writes the a record in to a file saved in the database -->
+            <?php
+              // Create a variable //
+                $hits = file("counter2.txt");
+                 //Add one to the file //
+                $hits[0] ++;
+                  //Open the file and write on file//
+                $fp = fopen("counter2.txt", "w");
+                // Fput writes the first part in the brackets//
+                fputs($fp , "$hits[0]");
+                //Close file// 
+                fclose($fp);
+                echo $hits[0]." Clicks";
+                ?>
+            </div>
                 <br>
                 <form method="get" action="booking1.php">
           <button type="submit" name="2" class="button btn btn-info  btn-link">Book</button>
