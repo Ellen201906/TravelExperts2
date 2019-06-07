@@ -17,21 +17,8 @@
        while ($row=mysqli_fetch_row($result))
       
           // The value of this is row one column number
-			print	'<div class="counter">';'
-          
-              // Create a variable //
-                $hits = file("counter2.txt");
-                 //Add one to the file //
-                $hits[0] ++;
-                  //Open the file and write on file//
-                $fp = fopen("counter2.txt", "w");
-                // Fput writes the first part in the brackets//
-                fputs($fp , "$hits[0]");
-                //Close file// 
-                fclose($fp);
-                echo $hits[0]." Clicks";
-              
-            print '</div>';
+		
+   
       
 echo <<<GO
      
@@ -44,9 +31,7 @@ echo <<<GO
                     <p class="price">ONLY $$row[5]</p>
                     <p>$row[4]</p>
                 </div>
-
-			
-
+          
 
 
                 <form method='post' action='package$row[0].php'>
