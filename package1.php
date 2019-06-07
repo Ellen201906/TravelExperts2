@@ -60,7 +60,7 @@
           <br>
           <br>
           <i class='fas fa-plane-departure'></i><span>Grand Bahama International Airport</span>
-          <br>
+          <br><br>
          
           <div class="counter">
             <i class="fa fa-eye"></i>
@@ -78,7 +78,7 @@
                echo  $hits[0].'clicks';
                 ?>
 				</div>
-				<br>
+				<br><br>
 				
 
           <form method="get" action="booking1.php">
