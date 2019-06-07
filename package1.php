@@ -62,7 +62,7 @@
           <i class='fas fa-plane-departure'></i><span>Grand Bahama International Airport</span>
           <br><br>
          
-          <div class="counter">
+          <div >
             <i class="fa fa-eye"></i>
 			   <?php
             // Create a variable //

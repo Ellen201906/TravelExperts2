@@ -53,7 +53,7 @@
                 <br>
                 <i class='fas fa-plane-departure'></i><span>Tahiti, Fa'a'ā International Airport</span>
                 <br><br>
-                 <div class="counter">
+                 <div >
             <i class="fa fa-eye"></i>
             <!-- this part is recording the amount of time the package  uploads and writes the a record in to a file saved in the database -->
             <?php

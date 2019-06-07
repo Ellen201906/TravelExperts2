@@ -52,8 +52,9 @@
                 <br>
                 <br>
                 <i class='fas fa-plane-departure'></i><span>Gusti Ngurah Rai International Airport Bali, indonisia</span>
-                <br><br>
-				<div class="counter">
+                <br>
+                <br>
+				<div >
             <i class="fa fa-eye"></i>
             <!-- this part is recording the amount of time the package  uploads and writes the a record in to a file saved in the database -->
             <?php
@@ -71,7 +72,6 @@
                 ?>
             </div>
                 <br><br>
-                
                 <form method="get" action="booking1.php">
           <button type="submit" name="3" class="button btn btn-info  btn-link">Book</button>
            </form>
