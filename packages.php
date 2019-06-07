@@ -30,7 +30,19 @@ echo <<<GO
                       $row[3]</p>
                     <p class="price">ONLY $$row[5]</p>
                     <p>$row[4]<p
-	    
+	     <?php
+            // Create a variable //
+               $hits = file("counter1.txt");
+               //Add one to the file //
+               $hits[0] ++;
+               //Open the file and write on file//
+               $fp = fopen("counter1.txt", "w");
+              // Fput writes the first part in the brackets//
+               fputs($fp , "$hits[0]");
+               //Close file// 
+               fclose($fp);
+               echo  $hits[0].'clicks';
+                ?>
                 <form method='post' action='package$row[0].php'>
                   <input class="book btn-outline-success" type='submit' value='Details' name=$row[0]></input>
                 </form>
