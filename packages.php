@@ -34,7 +34,7 @@ echo <<<GO
                 <form method='post' action='package$row[0].php'>
                   <input class="book btn-outline-success" type='submit' value='Details' name=$row[0]></input>
                 </form>
-		</div>
+		
            
         
 GO;
@@ -50,6 +50,7 @@ GO;
                //Close file// 
                fclose($fp);
                echo  $hits[0].'clicks';
+	       print '</div>';
 	       print '</div>';
                 
               
