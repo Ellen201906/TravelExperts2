@@ -37,7 +37,7 @@ logout;
       }
       else {
         echo <<< login
-        <form action="login.php" method="post" id="formsize" style="font-size:28px">
+        <form action="login.php" method="post" id="formsize" >
           <input type="text" name="username" placeholder="username" aria-describedby="inputGroup-sizing-sm" value="" style="width:120px; ">
           <input type="password" name="password" placeholder="password" aria-describedby="inputGroup-sizing-sm" value="" style="width:120px">
           <button type="submit" name="login-submit">Login</button>

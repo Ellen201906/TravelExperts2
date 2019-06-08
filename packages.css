@@ -6,7 +6,7 @@ div.card {
   margin-left:10px;
   border: 1px solid #ccc;
   width: 250px;
-  height:400px;
+  height:440px;
   display: inline-block; 
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -19,8 +19,8 @@ div.card {
   }
   
   div.card img {
-    width: 100%;
-    height: 40%;
+    width: 250px;
+    height: 190px;
   } 
 
   div.text {
