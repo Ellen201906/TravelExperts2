@@ -15,7 +15,7 @@
        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-141671115-1');
+     gtag('config', 'UA-141671115-1');
       </script>
 
     <meta charset="utf-8" />
@@ -27,9 +27,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     
-    
+     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="packages.css">
-    <link rel="stylesheet" type="text/css" href="reset.css">
+   
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <style>
         #carouselText {
@@ -60,7 +60,7 @@
                 <img src="http://media.tdc.travel/tdc_media/tmp/new/1554145574.2000.big-banner-2.jpg" class="d-block w-100" alt="...">
             </div>
             <div id="carouselText">
-                <br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br>
                 <h1 class="display-4">Travel Experts</h1>
                 <p class="lead">Save big on summer packages.</p>
             </div>

@@ -21,7 +21,7 @@ if (session_status() == PHP_SESSION_NONE) {
 <div id="header">
   <a href="index.php"><img src="logosmall.gif" id="logo" alt="My Image" title="Our logo" /></a>
    
-	<a   href="index.php">Home |</a>
+	<a href="index.php">Home |</a>
     <a href="register.php">Register |</a> 
     <a href="contact.php">Contact |</a>
 	
@@ -37,7 +37,7 @@ logout;
       }
       else {
         echo <<< login
-        <form action="login.php" method="post" id="formsize" >
+        <form action="login.php" method="post" id="formsize" style="font-size:28px">
           <input type="text" name="username" placeholder="username" aria-describedby="inputGroup-sizing-sm" value="" style="width:120px; ">
           <input type="password" name="password" placeholder="password" aria-describedby="inputGroup-sizing-sm" value="" style="width:120px">
           <button type="submit" name="login-submit">Login</button>
@@ -60,7 +60,7 @@ logoutbutton;
   <br>
   <br>
   <nav class="navbar navbar-expand-lg navbar-light bg-info">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" dropdown-toggle" data-toggle="dropdown" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">

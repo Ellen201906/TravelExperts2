@@ -98,12 +98,12 @@
         ?>
 
         <!--      ----------Create form for registration-----------     -->
-        <div id="maindiv">
+        <div id="maindiv" style="font-size:18px">
             <h4 id="tbheading style="color:black">Please register your information:</h4>
-            <p><span style="color:#FF0000;">* All information are required.</span></p>
-            <table id="tb">
+            <p><span style="color:#FF0000;">* All information are required.</span></p><br>
+            <table id="tb" ">
                 <tr>
-                <form method="POST" id="fm1" action="regprocess.php" autocomplete="off" >
+                <form method="POST" id="fm1" action="regprocess.php" autocomplete="off" style="font-size:18px">
                     <td class="lab"><label>User Name:</label></td>
                     <td calss="input"><input type="text" name="UserId" class="text" form="fm1"/></td>
                     <td class="mg" rowspan="14">
