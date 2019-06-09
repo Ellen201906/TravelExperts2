@@ -24,6 +24,7 @@ if (session_status() == PHP_SESSION_NONE) {
 	<a href="index.php">Home |</a>
     <a href="register.php">Register |</a> 
     <a href="contact.php">Contact |</a>
+	<br>
 	
   <nav id="nav1">
     <?php
