@@ -27,7 +27,7 @@ echo <<<GO
                   <p class="title1">$row[1]</p><br>
                     <p class="date">$row[2] <br>  
                       $row[3]</p>
-                    <p class="price">ONLY $$row[5]</p><br><br>
+                    <p class="price">ONLY $$row[5]</p><br>
                     <p class="desc">$row[4]</p>
                 </div>
                 <form method='post' action='package$row[0].php'>
