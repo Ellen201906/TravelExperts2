@@ -34,14 +34,14 @@ div.card {
     color: white;
     padding: 10px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16x;
     cursor: pointer;
 }
 
   .price{
     text-align: right;
     color: rgb(8, 105, 165);
-    font-size: 20px;
+    font-size: 16px;
     text-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
@@ -52,7 +52,7 @@ div.card {
   .date{
     text-align: left;
     color:lightslategray;
-    font-size: 20px;
+    font-size: 16px;
     text-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
