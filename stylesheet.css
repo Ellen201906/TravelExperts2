@@ -4,8 +4,8 @@ body {
     background-size: cover;
 }
 
-.navbar {
-    margin-top: 50px;
+.navbar{
+    margin-top:8px;
     background-color: #e3f2fd;
 }
 
@@ -16,21 +16,18 @@ body {
     margin-top:-20px;
 }
 
-
-
-#nav1 {
-    position: absolute;
-    top: 60px;
-    right: 10px;
+#nav1{
+    position:absolute;
+    top:10px;
+    right:10px;
 }
 
 a {
-    color: black ;
-    font-size: 22px;
+    color: black
 }
 
 #footer{
-    font-size:16px;
+    font-size:14px;
     color:black;
     margin-top:50px;
     margin-left:20px;
