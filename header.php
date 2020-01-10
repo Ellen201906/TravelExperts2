@@ -13,7 +13,7 @@ if (session_status() == PHP_SESSION_NONE) {
         gtag('js', new Date());
 
         gtag('config', 'UA-141671115-1');
-
+</script>
     
 <div id="header">
   <a href="index.php"><img src="logosmall.gif" id="logo" alt="My Image" title="Our logo" /></a>
