@@ -4,6 +4,7 @@
 <head>
    <meta charset="utf-8" />	
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -68,7 +69,7 @@
 
 .container {
   background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
+  padding: 3px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
@@ -215,7 +216,7 @@ span.price {
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .row {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .col-25 {
    
@@ -276,27 +277,46 @@ include "dbcon.php";
     print "<br>";
     print "<p >You have  ".$number."   travller(s)<p>";
     print "<p><i class='fa fa-warning' style='font-size:22px;color:red'></i>Important: Traveller names must match your government-issued photo ID exactly.<p>";
+	print "<p> * All information are required</p>";
+
 	while ($i<= $_REQUEST["q"]){
 	echo <<<EOT
    <div>
     
-    <p> * All information are required</p>
-     <p><i class='fas fa-portrait' style='font-size:36px;color:green'></i>Traveller $i</p>	
-  
-	 <ul >
-	   <li style="display:inline;padding-left:-60px">Title</li>
-	   <li style="display:inline;padding-left:50px">First name<sup>*</sup></li>
-	   <li style="display:inline;padding-left:20px">Middle name</li>
-	   <li style="display:inline;padding-left:30px">Last name<sup>*</sup></li>
-	   <li style="display:inline;padding-left:20px;">Birthday<sup>*</sup></li>
-	  </ul>
- 
-    <select id='select1'><option value='Mr'>Mr</option><option value='Mrs'>Mrs.</option><option value='Ms'>Ms.</option></select>
-    <input id='input1' type='text' name='fname'>
-    <input id='input2' type='text' name='mname'>
-	<input id='input3' type='text' name='lname'>
-    <input  type="date" name="birth" value="birth"> 
-   </div>
+    
+     <p><i class='fas fa-portrait text-info' style='font-size:36px;'></i>Traveller $i</p>	
+     
+	 <div class="container-fliud">
+	 <div class="row" style="border:1px solid #ccc;background-color:lightgrey;margin-bottom:10px; ">
+	   <div class="col-xs-2">
+	      <p >Title</p>
+		   <select id='select1'><option value='Mr'>Mr</option><option value='Mrs'>Mrs.</option><option value='Ms'>Ms.</option></select>
+		    </div>
+			
+			<div class="col-xs-2">
+			<p >First name<sup>*</sup></p>
+	         <input id='input1' type='text' name='fname'>
+		   </div>
+		   
+		   <div class="col-xs-2">
+		   <p>Middle name</p>
+		      <input id='input2' type='text' name='mname'>
+		   </div>
+
+		   <div class="col-xs-2">
+		   <p>Last name<sup>*</sup></p>
+		   <input id='input3' type='text' name='lname'>
+		    </div>
+
+			<div class="col-xs-2">
+			<p>Birthday</p>
+			<input  type="date" name="birth" value="birth"> 
+		   </div>
+	 </div>
+	 
+	 
+	  
+
 
 
 EOT;
@@ -308,11 +328,11 @@ $i++;
 </div>
 <br>
 <p style="margin-left:50px;font-size:18px">How do you want to pay?<p>
-<p  style="margin-left:50px"><img src="phone.jpg" style="width:30px">Help telephone 1-403-686-8429      <a href="contact.php">contact us</a>
+<p  style="margin-left:50px"><img src="phone.png" style="width:30px">Help telephone 1-403-686-8429      <a href="contact.php">contact us</a>
 			</p>
 </div>
-<br>
-	<div class="container">
+
+<div class="container">
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -417,7 +437,8 @@ $i++;
       </form>
     </div>
   </div>
-           <div class="row">
+
+      <div class="row">
   	 <div class="col-25">	 
     <div   class="container">
 	<?php
@@ -438,7 +459,7 @@ $i++;
 	  ?>
       </div>
 	  </div>
-       </div>
+	   </div>
 	  </div>
 
  
