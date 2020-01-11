@@ -352,21 +352,21 @@ $i++;
 		
 		   <div class="row">
               <div class="col-50">
-			    <label for="CustFirstName"><i class="fa fa-user"></i> First Name<sup>*</sup>
+			    <label for="CustFirstName"><i class="fa fa-user text-info"></i> First Name<sup>*</sup>
                 <input type="text" id="fname" name="CustFirstName" placeholder="John" required></label>
               </div>
               <div class="col-50">
-                <label for="CustLastName"><i class="fa fa-user"></i>Last Name<sup>*</sup>
+                <label for="CustLastName"><i class="fa fa-user text-info"></i>Last Name<sup>*</sup>
                 <input type="text" id="lname" name="CustLastName" placeholder="Doe" required></label> 
               </div>
             </div>
 			
-			<label for="CustAddress"><i style='font-size:16px' class='fas'>&#xf6f1;</i>Address<sup>*</sup>
+			<label for="CustAddress"><i style='font-size:16px' class='fas text-info'>&#xf6f1;</i>Address<sup>*</sup>
             <input type="text" id="adr" name="CustAddress" placeholder="14 Meleod Street"></label>
             
             <div class="row">
 			   <div class="col-50">
-			     <label for="CustCity"><i style='font-size:16px' class='fas'>&#xf64f;</i>City
+			     <label for="CustCity"><i style='font-size:16px' class='fas text-info'>&#xf64f;</i>City
                  <input type="text" id="city" name="CustCity" placeholder="Calgary"></label>
 			   </div>
                <div class="col-50">
@@ -395,7 +395,7 @@ $i++;
                   <input  type="text" id="postal"  onblur="post()"  name="CustPostal" placeholder="T5A 3A8" required></label>
                 </div>
 			    <div class="col-50">
-			      <label for="CustHomePhone"><i class="fa fa-phone"></i>phone
+			      <label for="CustHomePhone"><i class="fa fa-phone text-info"></i>phone
                   <input  type="text" id="hphone" name="CustHomePhone" placeholder="780-680-8421" required></label>
 			   </div>
 			
@@ -403,7 +403,7 @@ $i++;
 
             </div>
 
-			 <label for="CustEmail"><i class="fa fa-envelope"></i>Email
+			 <label for="CustEmail"><i class="fa fa-envelope text-info"></i>Email
                    <input class="class1" type="email" id="email" name="CustEmail" placeholder="john@example.com"></label>
 
 			
