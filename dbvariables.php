@@ -11,9 +11,10 @@
   // $dbName = "travelexperts";
  
   $dbServername="remotemysql.com";
-  $dbUsername="UN6AGWHSo2";
-  $dbPassword="O3AyO1IXuu";
-  $dbname="UN6AGWHSo2";
+  $dbUsername="VVM1l1CnNR";
+  $dbPassword="Vr1Dq4ju2f";
+  $dbname="VVM1l1CnNR";  
+
 
    /*
       @Jonathan Arca
