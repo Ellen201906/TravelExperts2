@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <?php include 'header.php';?>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<?php include 'header.php';?>
     <title>Booking Page</title>
     
 <style>
@@ -276,8 +278,8 @@ include "dbcon.php";
     $i=1;
     print "<br>";
     print "<p >You have  ".$number."   travller(s)<p>";
-    print "<p><i class='fa fa-warning' style='font-size:22px;color:red'></i>Important: Traveller names must match your government-issued photo ID exactly.<p>";
-	print "<p> * All information are required</p>";
+    print "<p><i class='fa fa-warning' style='font-size:22px;color:red'></i>Important: Traveller names must match your government-issued photo ID exactly.<p><br>";
+	print "<p> * All information are required</p><br>";
 
 	while ($i<= $_REQUEST["q"]){
 	echo <<<EOT
@@ -287,7 +289,7 @@ include "dbcon.php";
      <p><i class='fas fa-portrait text-info' style='font-size:36px;'></i>Traveller $i</p>	
      
 	 <div class="container-fliud">
-	 <div class="row" style="border:1px solid #ccc;background-color:lightgrey;margin-bottom:10px; ">
+	 <div class="row" style="border:1px solid #ccc;background-color:lightgrey;margin-bottom:10px; height:100px">
 	   <div class="col-xs-2">
 	      <p >Title</p>
 		   <select id='select1'><option value='Mr'>Mr</option><option value='Mrs'>Mrs.</option><option value='Ms'>Ms.</option></select>
@@ -409,16 +411,18 @@ $i++;
           <div class="col-50">
             <h3>Payment
 			</h3>
-		
-              <label for="fname">Accepted Cards
-              <div class="icon-container" style="float:right;margin-top:-20px">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-              </div></label>
+		        
+              <label>Accepted Cards
+              
+			  <i style='font-size:24px;color:blue;' class='fab'>&#xf1f0;</i>
+			  <i style='font-size:24px;color:red' class='fab'>&#xf1f3;</i>
+			  <i style='font-size:24px;color:orange;' class='fab'>&#xf416;</i>
+			  <i style='font-size:24px;color:green' class='fab'>&#xf1f1;</i>
+              
+              </label>
          
-			<p style="font-size:14px">Please select a valid year of credit card expiration.<p>
+			<p style="font-size:16px">Please select a valid year of credit card expiration.<p>
+			<br>
 			<label for="CCName">Name on Card<sup>*</sup></label>
             <input type="text" onblur="cname1()" id="cname" name="CCName" placeholder="John Doe" required><span id="cname1" class="ok">name is ok<i class="fa fa-check" style="font-size:14px"></i></span>
             <label for="CCNumber ">Credit card number<sup>*</sup></label>
