@@ -289,10 +289,11 @@ include "dbcon.php";
      <p><i class='fas fa-portrait text-info' style='font-size:36px;'></i>Traveller $i</p>	
      
 	 <div class="container-fliud">
-	 <div class="row" style="border:1px solid #ccc;background-color:lightgrey;margin-bottom:10px; height:100px">
+	 <div class="row" style="border:1px solid #ccc;background-color:lightgrey;margin-bottom:10px;">
 	   <div class="col-xs-2">
 	      <p >Title</p>
 		   <select id='select1'><option value='Mr'>Mr</option><option value='Mrs'>Mrs.</option><option value='Ms'>Ms.</option></select>
+		   <br><br>
 		    </div>
 			
 			<div class="col-xs-2">
