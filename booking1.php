@@ -390,6 +390,7 @@ $i++;
 
 			
                 <div class="col-50">
+				<br>
                   <label  for="CustPostal">postal code<sup>*</sup>
                   <input  type="text" id="postal"  onblur="post()"  name="CustPostal" placeholder="T5A 3A8" required></label>
                 </div>
