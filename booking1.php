@@ -312,7 +312,7 @@ include "dbcon.php";
 		    </div>
 
 			<div class="col-xs-2">
-			<p>Birthday</p>
+			<p>Birthday<sup>*</sup></p>
 			<input  type="date" name="birth" value="birth"> 
 		   </div>
 	 </div>
@@ -361,12 +361,12 @@ $i++;
               </div>
             </div>
 			
-			<label for="CustAddress"><i class="fa fa-address-card-o"></i>Address
+			<label for="CustAddress"><i style='font-size:16px' class='fas'>&#xf6f1;</i>Address<sup>*</sup>
             <input type="text" id="adr" name="CustAddress" placeholder="14 Meleod Street"></label>
             
             <div class="row">
 			   <div class="col-50">
-			     <label for="CustCity"><i class="fa fa-institution"></i>City
+			     <label for="CustCity"><i style='font-size:16px' class='fas'>&#xf64f;</i>City
                  <input type="text" id="city" name="CustCity" placeholder="Calgary"></label>
 			   </div>
                <div class="col-50">
@@ -390,12 +390,12 @@ $i++;
 
 			  <div class="row">
                 <div class="col-50">
-                  <label style="margin-left:14px" for="CustPostal">postal code
-                  <input  style="width:200px" type="text" id="postal"  onblur="post()"  name="CustPostal" placeholder="T5A 3A8" required></label>
+                  <label style="margin-left:14px" for="CustPostal">postal code<sup>*</sup>
+                  <input  type="text" id="postal"  onblur="post()"  name="CustPostal" placeholder="T5A 3A8" required></label>
                 </div>
 			    <div class="col-50">
-			      <label for="CustHomePhone"><i class="fa fa-phone"></i>HomePhone<sup>*</sup></label>
-                  <input style="width:200px" type="text" id="hphone" name="CustHomePhone" placeholder="780-680-8421" required></label>
+			      <label for="CustHomePhone"><i class="fa fa-phone"></i>phone
+                  <input  type="text" id="hphone" name="CustHomePhone" placeholder="780-680-8421" required></label>
 			   </div>
 			  </div>
 
