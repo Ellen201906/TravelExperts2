@@ -318,6 +318,7 @@ $i++;
 			</p>
 </div>
 <br>
+	<div class="container">
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -422,7 +423,7 @@ $i++;
       </form>
     </div>
   </div>
-
+           <div class="row">
   	 <div class="col-25">	 
     <div   class="container">
 	<?php
@@ -443,7 +444,8 @@ $i++;
 	  ?>
       </div>
 	  </div>
-
+       </div>
+	  </div>
 
  
 	
