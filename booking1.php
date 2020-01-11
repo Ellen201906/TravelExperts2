@@ -352,12 +352,12 @@ $i++;
 		
 		   <div class="row">
               <div class="col-50">
-			  <label for="CustFirstName"><i class="fa fa-user"></i> First Name<sup>*</sup>
-            <input type="text" id="fname" name="CustFirstName" placeholder="John" required></label>
+			    <label for="CustFirstName"><i class="fa fa-user"></i> First Name<sup>*</sup>
+                <input type="text" id="fname" name="CustFirstName" placeholder="John" required></label>
               </div>
               <div class="col-50">
-               <label for="CustLastName"><i class="fa fa-user"></i>Last Name<sup>*</sup>
-            <input type="text" id="lname" name="CustLastName" placeholder="Doe" required></label> 
+                <label for="CustLastName"><i class="fa fa-user"></i>Last Name<sup>*</sup>
+                <input type="text" id="lname" name="CustLastName" placeholder="Doe" required></label> 
               </div>
             </div>
 			
@@ -388,16 +388,16 @@ $i++;
 				 </select></label>
               </div>
 
-			  <div class="row">
+			
                 <div class="col-50">
-                  <label style="margin-left:14px" for="CustPostal">postal code<sup>*</sup>
+                  <label  for="CustPostal">postal code<sup>*</sup>
                   <input  type="text" id="postal"  onblur="post()"  name="CustPostal" placeholder="T5A 3A8" required></label>
                 </div>
 			    <div class="col-50">
 			      <label for="CustHomePhone"><i class="fa fa-phone"></i>phone
                   <input  type="text" id="hphone" name="CustHomePhone" placeholder="780-680-8421" required></label>
 			   </div>
-			  </div>
+			
 
 
             </div>
